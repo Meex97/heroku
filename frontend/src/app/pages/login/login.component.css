@@ -1,0 +1,63 @@
+button{
+  background: white;
+  padding: 0;
+  border: none;
+  font-size: 130%;
+
+
+}
+
+mat-card {
+  max-width: 600px;
+  max-height: inherit;
+  margin: 8em auto;
+  text-align: center;
+}
+
+mat-form-field {
+  display: block;
+}
+
+mat-checkbox  {
+  position: inherit;
+}
+
+
+a{
+  text-decoration: none;
+  font-size: large;
+  white-space: normal;
+
+}
+a:hover {
+  color: blue;
+  text-decoration: none;
+}
+
+input{
+  font-size: large;
+}
+
+
+.mat-raised-button.mat-primary{
+  background: #007bff;
+  color: #fff;
+
+}
+
+.mat-raised-button.mat-primary{
+  text-decoration: white;
+  font-weight: bold;
+}
+
+.mat-raised-button.mat-primary:hover{
+  color: yellow;
+  text-decoration: white;
+  font-weight: bold;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}

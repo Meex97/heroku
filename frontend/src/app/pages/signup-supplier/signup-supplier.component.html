@@ -1,0 +1,103 @@
+<h1 align="center" class="display-4 mb-5">Sign Up</h1>
+<div style="width:40%; margin: 25px auto" >
+  <form #form="ngForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label><b>Email address</b></label>
+      <input [(ngModel)]="supplier.email" type="email" class="form-control form-control-lg" id="email" name="email" placeholder="Enter email" email required autofocus  #email="ngModel">
+      <div  *ngIf="email.invalid && (email.dirty ||email.touched)" >
+        <div *ngIf="email.errors.required" >
+          Email is required.
+        </div>
+        <div *ngIf="email.errors.email">
+          Invalid Email.
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label><b>Name</b></label>
+      <input [(ngModel)]="supplier.name" type="text" class="form-control form-control-lg" id="name" name="name" placeholder="Your name" required #name="ngModel">
+      <div  *ngIf="name.invalid && (name.dirty ||name.touched)">
+        <div *ngIf="name.errors.required">
+          Name is required.
+        </div>
+        <div *ngIf="name.errors.minlength">
+          Name must be at least 3 characters long.
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label><b>Surname</b></label>
+      <input [(ngModel)]="supplier.surname" type="text" class="form-control form-control-lg" id="surname" name="surname" placeholder="Your surname" required #surname="ngModel">
+      <div  *ngIf="surname.invalid && (surname.dirty ||surname.touched)">
+        <div *ngIf="surname.errors.required">
+          Surname is required.
+        </div>
+        <div *ngIf="surname.errors.minlength">
+          Surname must be at least 3 characters long.
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label><b>Password</b></label>
+      <input  [(ngModel)]="supplier.password" type="password" class="form-control form-control-lg" id="password" name="password" placeholder="Password" minlength="3" required #password="ngModel">
+      <div  *ngIf="password.invalid && (password.dirty ||password.touched)">
+        <div *ngIf="password.errors.required">
+          Password is required.
+        </div>
+        <div *ngIf="password.errors.minlength">
+          Password must be at least 3 characters long.
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label><b>Shop name</b></label>
+      <input [(ngModel)]="supplier.shopName" type="text" class="form-control form-control-lg" id="shopName" name="shopName" placeholder="shopName" required #shopName="ngModel" >
+      <div  *ngIf="shopName.invalid && (shopName.dirty ||shopName.touched)">
+        <div *ngIf="shopName.errors.required">
+          Shop name is required.
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label><b>Phone</b></label>
+      <input [(ngModel)]="supplier.phone" type="text" class="form-control form-control-lg" id="phone" name="phone" placeholder="Phone" required #phone="ngModel" >
+      <div  *ngIf="phone.invalid && (phone.dirty ||phone.touched)">
+        <div *ngIf="phone.errors.required">
+          Phone is required.
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label><b>VAT</b></label>
+      <input [(ngModel)]="supplier.vat" type="text" class="form-control form-control-lg" id="vat" name="vat" placeholder="vat" required #vat="ngModel" >
+      <div  *ngIf="vat.invalid && (vat.dirty ||vat.touched)">
+        <div *ngIf="vat.errors.required">
+          VAT is required.
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="form-group">
+      <label><b>Address</b></label>
+      <input [(ngModel)]="supplier.address" type="text" class="form-control form-control-lg" id="address" name="address" placeholder="Address" required #address="ngModel">
+      <div  *ngIf="address.invalid && (address.dirty ||address.touched)">
+        <div *ngIf="address.errors.required">
+          Address is required.
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <button type="submit" class="btn btn-lg btn-primary btn-block" [disabled]="!form.form.valid" >Sign Up</button>
+    </div>
+
+  </form>
+</div>
+
+

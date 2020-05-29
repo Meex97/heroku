@@ -1,0 +1,73 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<app-toolbar></app-toolbar>
+<div class="container">
+
+ <!-- <app-navigation></app-navigation>-->
+
+  <router-outlet></router-outlet>
+  <div class="container">
+    <br>
+    <br>
+    <hr>
+    <div class="text-center">
+    </div>
+
+
+
+    <!-- Site footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>About</h6>
+            <p class="text-justify">
+              TO-Shop is a platform aimed at buying and selling new and second-hand goods in the Turin area. Through
+              the <i>EXCHANGE</i> service it's possible to exchange your products in a simple way, obtaining credits that
+              can be used on the platform for new purchases.
+            </p>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Categories</h6>
+            <ul class="footer-links">
+              <li><a routerLink="/category/0">Books</a></li>
+              <li><a routerLink="/category/1">Food</a></li>
+              <li><a routerLink="/category/2">Clothes</a></li>
+              <li><a routerLink="/category/3">Drink</a></li>
+              <li><a routerLink="/category/4">Hi-Tech</a></li>
+              <li><a routerLink="/category/5">Home</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a>About Us</a></li>
+              <li><a>Contact Us</a></li>
+              <li><a>Contribute</a></li>
+              <li><a>Privacy Policy</a></li>
+              <li><a>Sitemap</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+      </div>
+
+
+    </footer>
+
+
+    <!--Copyright-->
+    <div class="footer-copyright py-3 text-center">
+      © 2019 Copyright:
+      <a href="https://zlin.me"> TO-Shop </a>
+    </div>
+    <!--/.Copyright-->
+  </div>
+</div>

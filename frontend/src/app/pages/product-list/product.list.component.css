@@ -1,0 +1,10 @@
+a{
+  text-decoration: none;
+  font-size: large;
+  white-space: normal;
+
+}
+a:hover {
+  color: blue;
+  text-decoration: none;
+}

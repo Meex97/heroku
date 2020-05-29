@@ -1,0 +1,20 @@
+button{
+  background-color: #007bff;
+  color: white;
+}
+
+button:hover{
+  color: yellow;
+  text-decoration: white;
+}
+
+a{
+  text-decoration: none;
+  font-size: large;
+  white-space: normal;
+
+}
+a:hover {
+  color: blue;
+  text-decoration: none;
+}

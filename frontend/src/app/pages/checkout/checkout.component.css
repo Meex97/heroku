@@ -1,0 +1,28 @@
+a{
+  text-decoration: none;
+  font-size: large;
+  white-space: normal;
+
+}
+a:hover {
+  color: blue;
+  text-decoration: none;
+}
+
+#checkout{
+  background-color: #007bff;
+  color: white;
+}
+
+#checkout:hover{
+  color: yellow;
+  text-decoration: white;
+}
+
+span{
+  font-size: 150%;
+}
+
+.discount{
+  font-size: 130%;
+}

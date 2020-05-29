@@ -1,0 +1,73 @@
+.mat-toolbar.mat-primary {
+  background: #007bff;
+  color: #fff;
+}
+.companyName{
+  font-size: 110%;
+}
+
+.mat-toolbar{
+  height: 7vh;
+
+}
+
+div {
+  overflow: inherit;
+}
+
+.mat-sidenav-container{
+
+}
+
+a{
+  text-decoration: none;
+  font-size: medium;
+  white-space: normal;
+
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+.yellowing:hover {
+  color: yellow;
+  text-decoration: none;
+}
+
+
+button{
+  font-size: 110%;
+  min-width: min-content;
+}
+
+.example-icon {
+  padding: 0 14px;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.mat-sidenav-content{
+  font-size: 200%;
+  text-align: center;
+}
+
+
+
+.torinocity {
+  alignment: center;
+  vertical-align: middle;
+  margin-left:  400px;
+  /*margin-bottom: 2px;*/
+  float: left;
+  width: 350px;
+  height: 70px;
+  /*border-radius: 50%;*/
+  /*display: block; */
+}
+
+mat-icon:hover{
+  color: yellow;
+}
