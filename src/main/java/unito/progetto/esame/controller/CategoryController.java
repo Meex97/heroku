@@ -35,6 +35,7 @@ public class CategoryController {
      * @param size
      * @return
      */
+
     @Transactional
     @GetMapping("/category/{type}")
     public Page<ProductInfo> showOne(@PathVariable("type") Integer categoryType,
@@ -42,8 +43,8 @@ public class CategoryController {
                                      @RequestParam(value = "size", defaultValue = "3") Integer size) {
 
         ProductCategory cat = categoryService.findByCategoryType(categoryType);
-        PageRequest request = PageRequest.of(page-1 , size);
-        List<ProductInfo> category = this.productController.findAll2(page , size).toList();
+        PageRequest request = PageRequest.of(page-1 , 6);
+        List<ProductInfo> category = this.productController.findAll2(1 , 50).toList();
         List<ProductInfo> tmp = new ArrayList<>();
         category.forEach(x -> {
             if(x.getCategoryType() == categoryType){
@@ -51,10 +52,14 @@ public class CategoryController {
             }
         });
 
-        if(tmp.size() <= size){
-            size = tmp.size() ;
+        int min_prod = 6*page;
+        if(tmp.size() <= 6*page){
+            //size = new_products.size() ;
+            min_prod = tmp.size();
         }
-        Page<ProductInfo> pages = new PageImpl<>(tmp.subList(page-1, size), request, tmp.size());
+
+
+        Page<ProductInfo> pages = new PageImpl<>(tmp.subList((page-1)*6, min_prod), request, tmp.size());
         //Page<ProductInfo> productInCategory =  productService.findAllInCategory(categoryType, request);
         //CategoryPage tmp = new CategoryPage("", productInCategory);
         //tmp.setCategory(cat.getCategoryName());

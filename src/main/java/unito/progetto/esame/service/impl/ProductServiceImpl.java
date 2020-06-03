@@ -31,7 +31,7 @@ public class ProductServiceImpl implements ProductService {
     CategoryService categoryService;
 
     ProductInfo productInfo;
-
+    @Transactional
     @Override
     public ProductInfo findOne(String productId) {
 

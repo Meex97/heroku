@@ -83,7 +83,7 @@ public class ProductInOrder implements  Comparable<ProductInOrder>{
         this.productId = productInfo.getProductId();
         this.productName = productInfo.getProductName();
         this.productDescription = productInfo.getProductDescription();
-        //this.productIcon = productInfo.getProductIcon();
+        this.productIcon = productInfo.getProductIcon();
         this.productimage = productInfo.getProductimage();
         this.categoryType = productInfo.getCategoryType();
         this.productPrice = productInfo.getProductPrice();

@@ -50,17 +50,6 @@ public class ImageController {
         return ResponseEntity.status(HttpStatus.OK);
     }
 
-    // PER PROVEEEEEEEEEEEEEEEEEEEEEEEEEEE
-    @Transactional
-    @PostMapping("/upload2")
-    public BodyBuilder uplaodImage2(@RequestParam("image") MultipartFile file) throws IOException {
-        System.out.println("Original Image Byte Size - " + file.getBytes().length);
-        ImageModel img = new ImageModel(file.getOriginalFilename(), file.getContentType(),
-                compressBytes(file.getBytes()));
-        imageRepository.save(img);
-
-        return ResponseEntity.status(HttpStatus.OK);
-    }
 
     @Transactional
     @GetMapping(path = { "/get/{imageName}" })
