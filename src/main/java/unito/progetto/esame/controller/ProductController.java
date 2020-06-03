@@ -248,37 +248,31 @@ public class ProductController {
 
         //////////// Creazione Categorie //////////////////////
         ProductCategory category0 = new ProductCategory();
-        category0.setCategoryId(10);
         category0.setCategoryName("Books");
         category0.setCategoryType(0);
         categoryService.save(category0);
 
         ProductCategory category1 = new ProductCategory();
-        category1.setCategoryId(1);
         category1.setCategoryName("Food");
         category1.setCategoryType(1);
         categoryService.save(category1);
 
         ProductCategory category2 = new ProductCategory();
-        category2.setCategoryId(2);
         category2.setCategoryName("Clothes");
         category2.setCategoryType(2);
         categoryService.save(category2);
 
         ProductCategory category3 = new ProductCategory();
-        category3.setCategoryId(3);
         category3.setCategoryName("Drink");
         category3.setCategoryType(3);
         categoryService.save(category3);
 
         ProductCategory category4 = new ProductCategory();
-        category4.setCategoryId(4);
         category4.setCategoryName("Hi-Tech");
         category4.setCategoryType(4);
         categoryService.save(category4);
 
         ProductCategory category5 = new ProductCategory();
-        category5.setCategoryId(5);
         category5.setCategoryName("Home");
         category5.setCategoryType(5);
         categoryService.save(category5);
@@ -287,7 +281,6 @@ public class ProductController {
 
         //////////////////// Creazione Client GIUSEPPE ///////////////////
         Client client = new Client();
-        client.setId(Long.valueOf(1));
         client.setEmail("giuseppe@gmail.com");
         client.setName("Giuseppe");
         client.setAddress("via turati");
@@ -300,7 +293,6 @@ public class ProductController {
 
         //////////////////// Creazione Client Laura ///////////////////
         Supplier supplier4 = new Supplier();
-        supplier4.setId(Long.valueOf(12));
         supplier4.setEmail("laura@gmail.com");
         supplier4.setName("Piedi Pazzi");
         supplier4.setAddress("via permalosa");
@@ -315,7 +307,6 @@ public class ProductController {
 
         //////////////////// Creazione Suppliere Massimo ///////////////////
         Supplier supplier1 = new Supplier();
-        supplier1.setId(Long.valueOf(2));
         supplier1.setEmail("massimo@gmail.com");
         supplier1.setName("Kebab da Massimo");
         supplier1.setAddress("via alessandrello");
@@ -330,7 +321,6 @@ public class ProductController {
 
         //////////////////// Creazione Suppliere Salvo ///////////////////
         Supplier supplier2 = new Supplier();
-        supplier2.setId(Long.valueOf(3));
         supplier2.setEmail("salvo@gmail.com");
         supplier2.setName("Mastro Artigiano Salvo");
         supplier2.setAddress("via piave");
@@ -345,7 +335,6 @@ public class ProductController {
 
         //////////////////// Creazione Suppliere Pietro ///////////////////
         Supplier supplier3 = new Supplier();
-        supplier3.setId(Long.valueOf(4));
         supplier3.setEmail("pietro@gmail.com");
         supplier3.setName("Pielettro");
         supplier3.setAddress("via alessandrello");
@@ -361,7 +350,6 @@ public class ProductController {
 
         //////////////////// Creazione Suppliere manager ///////////////////
         User admin = new User();
-        admin.setId(Long.valueOf(5));
         admin.setEmail("admin@gmail.com");
         admin.setName("Admin");
         admin.setSurname("Admin");
